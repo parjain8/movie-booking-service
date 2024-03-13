@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout the source code from the Git repository
-                git credentialsId: 'git-credentials', url: 'https://github.com/parjain8/movie-booking-service.git'
+                git credentialsId: 'paras-git-credentials', url: 'https://github.com/parjain8/movie-booking-service.git'
         }
         }
 

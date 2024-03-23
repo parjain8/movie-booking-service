@@ -17,8 +17,10 @@
       "entryFile": "src/main",
       "sourceRoot": "./",
       "compilerOptions": {
-        "tsConfigPath": "apps/apigateway/tsconfig.app.json", 
-        "assets": ["proto/*.proto"],
+        "tsConfigPath": "apps/apigateway/tsconfig.app.json",
+        "assets": [
+          "proto/*.proto"
+        ],
         "watchAssets": true
       }
     },
@@ -29,7 +31,9 @@
       "sourceRoot": "./",
       "compilerOptions": {
         "tsConfigPath": "apps/auth/tsconfig.app.json",
-        "assets": ["proto/*.proto"],
+        "assets": [
+          "proto/*.proto"
+        ],
         "watchAssets": true
       }
     },
@@ -40,6 +44,19 @@
       "sourceRoot": "libs/common/src",
       "compilerOptions": {
         "tsConfigPath": "libs/common/tsconfig.lib.json"
+      }
+    },
+    "bookings": {
+      "type": "application",
+      "root": "apps/bookings",
+      "entryFile": "src/main",
+      "sourceRoot": "./",
+      "compilerOptions": {
+        "tsConfigPath": "apps/bookings/tsconfig.app.json",
+        "assets": [
+          "proto/*.proto"
+        ],
+        "watchAssets": true
       }
     }
   }
